@@ -1,12 +1,13 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
 
     private String nome;
     private List<Conta> contas;
-    private List<Cliente> clientes;
+    private List<Cliente> clientes = new ArrayList<>();
 
     public Banco(String nome) {
         this.nome = nome;
